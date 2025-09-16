@@ -3,10 +3,10 @@ import { useState } from 'react';
 function Navbar() {
     // State per gestire l'apertura/chiusura del menu mobile
     const [isOpen, setIsOpen] = useState(false);
-
+    const  vociMenu = ["Home", "Società", "Squadre", "Storia", "Contatti", "SafeGuarding"]
     return (
         // Container principale della navbar con sfondo e ombra
-        <nav className="bg-[#1E3A8A] shadow-lg">
+        <nav className="bg-black shadow-lg">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="flex justify-between">
                     {/* Logo e nome del sito */}
@@ -20,7 +20,7 @@ function Navbar() {
 
                     {/* Menu principale - nascosto su mobile */}
                     <div className="hidden md:flex items-center space-x-1">
-                        <a href="#" className="py-4 px-2 text-[#9B1C2F] border-b-4 border-[#9B1C2F] font-semibold">Home</a>
+                        <a href="#" className="py-4 px-2 text-[#0084c5] border-b-4 border-[#0084c5] font-semibold">Home</a>
                         <a href="#" className="py-4 px-2 text-white font-semibold hover:text-[#F97316] transition duration-300">Team</a>
                         <a href="#" className="py-4 px-2 text-white font-semibold hover:text-[#F97316] transition duration-300">News</a>
                         <a href="#" className="py-4 px-2 text-white font-semibold hover:text-[#F97316] transition duration-300">Contatti</a>
