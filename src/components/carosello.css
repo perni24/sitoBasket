@@ -1,0 +1,52 @@
+/* Wrapper per centrare il carosello e dargli una larghezza massima */
+.carousel-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Stile per la card di ogni slide */
+.slide-card {
+    background-color: #ffffff;
+    border-radius: 12px; /* Angoli arrotondati */
+    overflow: hidden; /* Nasconde le parti dell'immagine che escono dai bordi arrotondati */
+    /*box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);  Ombra per un effetto "sollevato" */
+    text-align: left;
+    margin-bottom: 2rem; /* Spazio per i "dots" in basso */
+}
+
+/* Stile per l'immagine all'interno della card */
+.slide-image {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* MODIFICA QUESTA RIGA */
+    background-color: #f0f0f0; /* Opzionale: aggiunge uno sfondo per riempire lo spazio vuoto */
+}
+
+/* Contenitore del testo sotto l'immagine */
+.slide-text-content {
+    padding: 24px;
+}
+
+/* Freccia di navigazione (generale) */
+.carousel .control-arrow {
+    background: rgba(30, 58, 138, 0.8) !important;
+    width: 40px !important;
+    height: 40px !important;
+    top: 50% !important;
+    transform: translateY(-50%);
+    border-radius: 50% !important;
+    opacity: 0.8 !important;
+    transition: opacity 0.3s ease;
+    
+    /* --- RIGHE AGGIUNTE PER CENTRARE --- */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.carousel .control-arrow:hover {
+    opacity: 1 !important;
+    background: #1E3A8A !important;
+}
+

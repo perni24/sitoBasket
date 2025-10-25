@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './pages/home.jsx'
 import Login from './pages/login.jsx'
 import Admin from './pages/admin.jsx'
+import Squadre from './pages/squadre.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />  
+      },
+      {
+        path: 'squadre',
+        element: <Squadre /> 
       },
       {
         path: 'login',
